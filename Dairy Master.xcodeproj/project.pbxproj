@@ -11,6 +11,16 @@
 		CE2179F428B51EBC00828511 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2179F328B51EBC00828511 /* ContentView.swift */; };
 		CE2179F628B51EBD00828511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2179F528B51EBD00828511 /* Assets.xcassets */; };
 		CE2179F928B51EBD00828511 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2179F828B51EBD00828511 /* Preview Assets.xcassets */; };
+		CE217A0128B51F0700828511 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE217A0328B51F0700828511 /* Localizable.strings */; };
+		CE217A0728B520D500828511 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A0628B520D500828511 /* DateValue.swift */; };
+		CE217A0928B520EC00828511 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A0828B520EC00828511 /* Task.swift */; };
+		CE217A0E28B5216B00828511 /* Date Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A0D28B5216B00828511 /* Date Screen.swift */; };
+		CE217A1028B5218800828511 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A0F28B5218800828511 /* TabBar.swift */; };
+		CE217A1228B5219C00828511 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A1128B5219C00828511 /* ClientView.swift */; };
+		CE217A1428B521B100828511 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A1328B521B100828511 /* ServicesView.swift */; };
+		CE217A1628B521C300828511 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A1528B521C300828511 /* SettingsView.swift */; };
+		CE217A1828B521DA00828511 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A1728B521DA00828511 /* SignUpView.swift */; };
+		CE217A1A28B521F000828511 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE217A1928B521F000828511 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,18 @@
 		CE2179F328B51EBC00828511 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE2179F528B51EBD00828511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2179F828B51EBD00828511 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE217A0228B51F0700828511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE217A0428B51FE600828511 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE217A0628B520D500828511 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		CE217A0828B520EC00828511 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CE217A0D28B5216B00828511 /* Date Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Screen.swift"; sourceTree = "<group>"; };
+		CE217A0F28B5218800828511 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CE217A1128B5219C00828511 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		CE217A1328B521B100828511 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		CE217A1528B521C300828511 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE217A1728B521DA00828511 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CE217A1928B521F000828511 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CEBC1A3D28B628FE00DF2036 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,9 @@
 			children = (
 				CE2179F128B51EBC00828511 /* Dairy_MasterApp.swift */,
 				CE2179F328B51EBC00828511 /* ContentView.swift */,
+				CE217A0528B520B600828511 /* Model */,
+				CE217A0B28B5213600828511 /* View */,
+				CE217A0328B51F0700828511 /* Localizable.strings */,
 				CE2179F528B51EBD00828511 /* Assets.xcassets */,
 				CE2179F728B51EBD00828511 /* Preview Content */,
 			);
@@ -65,6 +90,37 @@
 				CE2179F828B51EBD00828511 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE217A0528B520B600828511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE217A0628B520D500828511 /* DateValue.swift */,
+				CE217A0828B520EC00828511 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE217A0B28B5213600828511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE217A0C28B5214C00828511 /* Home View Screen */,
+				CE217A0F28B5218800828511 /* TabBar.swift */,
+				CE217A1128B5219C00828511 /* ClientView.swift */,
+				CE217A1328B521B100828511 /* ServicesView.swift */,
+				CE217A1528B521C300828511 /* SettingsView.swift */,
+				CE217A1728B521DA00828511 /* SignUpView.swift */,
+				CE217A1928B521F000828511 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE217A0C28B5214C00828511 /* Home View Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE217A0D28B5216B00828511 /* Date Screen.swift */,
+			);
+			path = "Home View Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +165,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				uk,
 			);
 			mainGroup = CE2179E528B51EBC00828511;
 			productRefGroup = CE2179EF28B51EBC00828511 /* Products */;
@@ -126,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE2179F928B51EBD00828511 /* Preview Assets.xcassets in Resources */,
+				CE217A0128B51F0700828511 /* Localizable.strings in Resources */,
 				CE2179F628B51EBD00828511 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,18 +196,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE217A1228B5219C00828511 /* ClientView.swift in Sources */,
+				CE217A0928B520EC00828511 /* Task.swift in Sources */,
+				CE217A0728B520D500828511 /* DateValue.swift in Sources */,
+				CE217A1628B521C300828511 /* SettingsView.swift in Sources */,
 				CE2179F428B51EBC00828511 /* ContentView.swift in Sources */,
+				CE217A1428B521B100828511 /* ServicesView.swift in Sources */,
+				CE217A1828B521DA00828511 /* SignUpView.swift in Sources */,
+				CE217A1028B5218800828511 /* TabBar.swift in Sources */,
+				CE217A0E28B5216B00828511 /* Date Screen.swift in Sources */,
+				CE217A1A28B521F000828511 /* SignInView.swift in Sources */,
 				CE2179F228B51EBC00828511 /* Dairy_MasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		CE217A0328B51F0700828511 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE217A0228B51F0700828511 /* en */,
+				CE217A0428B51FE600828511 /* ru */,
+				CEBC1A3D28B628FE00DF2036 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		CE2179FA28B51EBD00828511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -209,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

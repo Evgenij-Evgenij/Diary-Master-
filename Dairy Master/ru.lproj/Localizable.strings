@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Dairy Master
+
+  Created by Евгений Воронов on 23.08.2022.
+  
+*/
+
+"signIn" = "Выполните вход";
+"enterYourLogin" = "Введите Ваш логин";
+"login" = "Логин";
+"enterYourPassword" = "Введите Ваш пароль";
+"password" = "Пароль";
+"enter" = "Войти";
+"noAccount?" = "Еще нет аккаунта?";
+"signUp" = "Зарегистрироваться";
+"enterUsed" = "Войти используя:";
+"createAccout" = "Создать аккаунт";
+"enterFirstName" = "Введите Ваше имя";
+"firstName" = "Имя";
+"enterLastName" = "Введите фамилию";
+"lastName" = "Фамилия";
+"enterYourEmail" = "Введите ваш E-mail";
+"email" = "E-mail";
+"calendar" = "Календарь";
+"clients" = "Клиенты";
+"services" = "Услуги";
+"settings" = "Настройки";
