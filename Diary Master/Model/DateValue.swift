@@ -1,6 +1,6 @@
 //
 //  DateValue.swift
-//  Dairy Master
+//  Diary Master
 //
 //  Created by Евгений Воронов on 23.08.2022.
 //

@@ -1,6 +1,6 @@
 //
 //  DateScreen.swift
-//  Dairy master
+//  Diary master
 //
 //  Created by Евгений Воронов on 13.08.2022.
 //
@@ -212,7 +212,7 @@ struct DateScreen: View {
 
 struct DateScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
       
     }
 }

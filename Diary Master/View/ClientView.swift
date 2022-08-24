@@ -1,6 +1,6 @@
 //
 //  ClientView.swift
-//  Dairy master
+//  Diary master
 //
 //  Created by Евгений Воронов on 15.08.2022.
 //

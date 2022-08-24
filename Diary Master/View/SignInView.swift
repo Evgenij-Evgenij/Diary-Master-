@@ -1,6 +1,6 @@
 //
 //  SignInView.swift
-//  Dairy master
+//  Diary master
 //
 //  Created by Евгений Воронов on 09.08.2022.
 //

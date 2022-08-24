@@ -1,6 +1,6 @@
 //
 //  TabBar.swift
-//  Dairy master
+//  Diary master
 //
 //  Created by Евгений Воронов on 12.08.2022.
 //

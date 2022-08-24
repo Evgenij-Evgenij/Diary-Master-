@@ -1,13 +1,13 @@
 //
 //  HomeView.swift
-//  Dairy master
+//  Diary master
 //
 //  Created by Евгений Воронов on 09.08.2022.
 //
 
 import SwiftUI
 
-struct ContentView: View { // TODO: rename it to the Home view
+struct HomeView: View { // TODO: rename it to the Home view
     
     @StateObject private var viewModel = HomeViewModel()
     
@@ -43,7 +43,7 @@ struct ContentView: View { // TODO: rename it to the Home view
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
 
