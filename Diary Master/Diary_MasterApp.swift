@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Diary_masterApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            HomeView()
-           // SignInView()
+            //HomeView()
+            SignInView()
         }
     }
 }

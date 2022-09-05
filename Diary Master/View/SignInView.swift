@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignInView: View {
-    @State var login = ""
-    @State var pass = ""
+    @State var loginFeild = ""
+    @State var passFeild = ""
     @State var isPresentinSignUp = false
     var body: some View {
         VStack {
@@ -26,7 +27,7 @@ struct SignInView: View {
                     .font(.headline)
                     .opacity(0.7)
                     .padding(.bottom, -2)
-                TextField(LocalizedStringKey("login"), text: $login)
+                TextField(LocalizedStringKey("login"), text: $loginFeild)
                     .foregroundColor(.black)
                     .padding(.vertical, 20)
                     .padding(.horizontal)
@@ -38,7 +39,7 @@ struct SignInView: View {
                     .font(.headline)
                     .opacity(0.7)
                     .padding(.bottom, -2)
-                TextField(LocalizedStringKey("password"), text: $pass)
+                TextField(LocalizedStringKey("password"), text: $passFeild)
                     .foregroundColor(.black)
                     .padding(.vertical, 20)
                     .padding(.horizontal)
@@ -49,7 +50,7 @@ struct SignInView: View {
             }
             
             Button {
-                //
+                login()
             } label: {
                 Text(LocalizedStringKey("enter"))
                     .foregroundColor(.white)
@@ -126,6 +127,13 @@ struct SignInView: View {
         .background(Image("login fon2")
             .resizable()
             .frame(width: UIScreen.main.bounds.width - 0, height: UIScreen.main.bounds.height - 0).ignoresSafeArea(.all))
+    }
+     func login() {
+        Auth.auth().signIn(withEmail: loginFeild, password: passFeild) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "error Login" )
+            }
+        }
     }
     //    private func textloginAndPass (title: String, textInField: String, bindValue: Binding<String>) -> some View {
     //        Text(title)

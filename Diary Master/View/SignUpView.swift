@@ -6,17 +6,26 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
     @State private var firstNameSignUp = ""
     @State private var lastNameSignUp = ""
     @State private var emailSignUp = ""
     @State private var passwordSignUp = ""
-    
+    @State private var userIsLoggedIn = false
     @Binding var isPresented: Bool
     // var signIn = SignInView()
     
     var body: some View {
+        if userIsLoggedIn {
+            HomeView()
+        } else {
+            content
+        }
+
+    }
+    var content: some View {
         VStack {
             Text(LocalizedStringKey("createAccout"))
                 .font(.title.bold())
@@ -67,7 +76,7 @@ struct SignUpView: View {
             .padding(.bottom, 40)
             
             Button {
-                //
+                register()
             } label: {
                 Text(LocalizedStringKey("signUp"))
                     .foregroundColor(.white)
@@ -93,15 +102,30 @@ struct SignUpView: View {
         .background(Image("login fon2")
             .resizable()
             .frame(width: UIScreen.main.bounds.width - 0, height: UIScreen.main.bounds.height - 0).ignoresSafeArea(.all))
-        
+        .onAppear{
+            Auth.auth().addStateDidChangeListener { auth, user in
+                if user != nil {
+                    userIsLoggedIn.toggle()
+                }
+            }
+        }
     }
+    
+   private func register() {
+        Auth.auth().createUser(withEmail: emailSignUp, password: passwordSignUp) { result, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "Error")
+            }
+        }
+    }
+
 }
+
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             SignUpView(isPresented: .constant(true))
         }
-        
     }
 }
